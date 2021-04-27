@@ -1,0 +1,220 @@
+
+/* Header Styles */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 2px solid slategray;
+    padding-right: 36px;
+    padding-left: 36px;
+    padding-bottom: 8px;
+}
+
+.page-link {
+    display: flex;
+}
+
+.nav-wrapper > .page-link > div {
+    margin-left: 36px;
+    justify-content: right;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.page-link-wrapper {
+    height: 22px;
+    border-bottom: 1px transparent;
+    transition: border-bottom 0.5s;
+}
+
+.page-link-wrapper a {
+    color: darkgrey;
+    text-decoration: none;
+    transition: color 0.5ms;
+}
+
+.page-link-wrapper:hover {
+    border-bottom: 1px solid lightskyblue;
+}
+
+.page-link-wrapper a:hover {
+    color: lightskyblue;
+}
+
+.active-page-link {
+    border-bottom: 1px solid lightskyblue;
+}
+
+.active-page-link a{
+    color: lightskyblue !important;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: left;
+    font-size: 1.5em;
+}
+
+.logo-wrapper {
+    margin-top: 0px;
+    margin-right: 22px;
+}
+
+/* Sidebar Styles*/
+
+aside#sidebar {
+    float:right;
+    width:33%;
+    min-height: 350px;
+    Margin: 54px;
+    background-color: #ffeded;
+    
+    
+}
+
+aside#sidebar .form{
+    float:center;
+    width:80%;
+    margin:36px;
+    
+    
+}
+
+
+aside#sidebar .form label{
+  
+    padding: 16px;
+    
+
+}
+
+aside#sidebar .form input{
+  
+    width:90%;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+
+
+aside#sidebar .form textarea{
+    width:90%;
+}
+
+form#order-form .name-box input{
+    margin-bottom: 8px;
+    
+}
+
+form#order-form .submit-button{
+    width: 25%;
+    padding:4px;
+}
+
+/* Boxes Styles*/
+
+#boxes {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    
+
+}
+
+#boxes .sample-box img{
+    
+    height: 100%;
+    width:100%;
+    align-items: center;
+    
+    
+}
+
+/* Gallery Styles */
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding:3rem;
+    min-height: 33vh;
+    grid-gap: 9rem;
+    
+}
+
+.image-container{
+    
+}
+
+.image-container img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.image-container img:hover{
+    transform: scale(1.2);
+    
+}
+
+/* Modal Styles */
+
+.modal{
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    pointer-events: none;
+    opacity:0;
+    transition: all 0.3s ease-out;
+}
+
+.modal.open{
+    pointer-events: all;
+    opacity:1;
+}
+
+.modal-showcase{
+    display: flex;
+    align-content:center;
+    justify-content: center;
+    background: #cf957a;
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    bottom: 50%;
+    left: 50%;
+    transform:translate(-50%,50%) scale(0.25);
+    transition:all 0.3s ease-out;
+}
+
+.modal-showcase.open{
+
+    transform:translate(-50%,50%) scale(1);
+}
+
+.modal-image{
+    
+    width: 50%;
+    height: 90%;
+    padding:1rem;
+}
+
+.modal-image img{
+   
+    object-fit: fill;
+}
+
+.modal-text {
+    color: wheat;
+    font-size:1.5rem;
+    width: 50%;
+    height: 80%;
+    
+}
+
+    
