@@ -54,7 +54,7 @@
                             Name
                         </label><br>
 
-                        <input type="text" placeholder="Your Name...">
+                        <input type="text" placeholder="Your Name..." id = "name">
                     </div>
 
                     <div class ="email-box">
@@ -62,14 +62,22 @@
                             Email
                         </label><br>
 
-                        <input type="email" placeholder="Email Address...">
+                        <input type="email" placeholder="Email Address..." id = "email">
                     </div>
 
                     <div class ="details-box">
                         <label>
                             Order Details
                         </label><br>
-                        <input type="text" placeholder="Details for the project...">
+                        <input type="text" placeholder="Details for the project..." id = "details">
+                    </div>
+
+                    <div class ="file-box">
+                        <label>
+                            Attachments
+                        </label><br>
+
+                        <input type="file" id = "file" accept="image/*" multiple required> 
                     </div>
 
                     <div class ="submit-button">
@@ -80,5 +88,8 @@
             </div>
 
         </aside>
+
+        <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+        <script src="form.js"></script>
     </body>
 </html>
