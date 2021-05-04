@@ -16,15 +16,21 @@ function submit(ev){
     ev.preventDefault();
 
     var name = getInputValue('name');
+    var date = getInputValue('date');
     var email = getInputValue('email');
-    var details = getInputValue('details');
-    var files = getInputValue('file');
-    var firstFileName = getFileName('file');
+    var details = getDetails('details');
+    var files = getFiles('file');
+    var firstFileName = files.name;
+    
+    console.log(name+"_"+date);
 
-   
+    console.log(details);
 
-    var storageRef = firebase.storage().ref('Photos/'+ files.name);
-    storageRef.put(files);
+    var storageRefPhoto = firebase.storage().ref(name+'_'+date+'/'+ firstFileName);
+    var storageRefDetails = firebase.storage().ref(name+'_'+date+'/'+ 'project_details');
+    storageRefPhoto.put(files);
+    storageRefDetails.putString(details);
+
     /* var first = file.files[0]; */
 
     console.log(firstFileName);
@@ -35,12 +41,15 @@ function getInputValue(id){
     return document.getElementById(id).value;
 }
 
+function getDetails(id){
+    return document.getElementById(id).value;
+}
+
 function getFileName(id){
     return document.getElementById(id).name;
 }
 
-/* function getFiles(file){
-    console.log(file.files[0].name);
-    return file.files[0];
+function getFiles(id){
+    return document.getElementById(id).files[0];
 }
- */
+
