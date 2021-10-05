@@ -1,4 +1,4 @@
-var firebaseConfig = {
+/* var firebaseConfig = {
     apiKey: "AIzaSyBd84FFQqz-oDMQXsKV6zccM7fkMU34Ng4",
     authDomain: "dk-demo-2ed83.firebaseapp.com",
     projectId: "dk-demo-2ed83",
@@ -7,7 +7,7 @@ var firebaseConfig = {
     appId: "1:934683045146:web:37dd26f5e916b5ec53d0a3"
   };
   // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig); */
 
 const modal = document.querySelector(".modal");
 const images = document.querySelectorAll(".gallery img");

@@ -5,27 +5,30 @@
         <meta name="viewport" content="width=device-width"/>
         <title> Dispatch Ko. | Home</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type="image/png" href="Assets/logo_alt copy.png">
+
     </head>
     <body>
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
                     <div class= "logo-wrapper">
-                        <img src="Assets/logo.png" alt="" height="64" width="64">
+                        <a href="index.html"> <img src="Assets/nav-logo.png" alt="" height="30px" width="202px"></a>
 
                     </div>
-
-
-                    <div class="brand-name">
+                    
+                    <!-- <div class="brand-name">
                         <div>Dispatch Ko.</div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="page-link">
-                    <div class="page-link-wrapper active-page-link">
+                    <!-- <div class="page-link-wrapper active-page-link">
                         <a href="index.html">Home</a>
-                    </div>
+                    </div> -->
                     
                     <div class="page-link-wrapper">
                         <a href="about.html">About</a>
@@ -37,18 +40,29 @@
 
 
                     <div class="page-link-wrapper">
-                        <a href="pricing.html">Pricing</a>
+                        <a href="order_howto.html">Order</a>
                     </div>
+
+                    <!-- <div class="page-link-wrapper">
+                        <a href="contact.html">Contact</a>
+                    </div> -->
 
                     <div class="page-link-wrapper">
-                        <a href="contact.html">Contact Us</a>
-                    </div>
-                </div>
+                        <div class="socials">
+                            <div class= "ig-logo">
+                                <a href="https://www.instagram.com/dispatchko/"><img src="Assets/IG.png" height="26px" width="26px"></a>
+                            </div>
 
-                
+                            <div class= "email-logo">
+                                <a href="mailto:hellodispatchko@gmail.com"><img src="Assets/Vector.png" height="26px" width="31"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
         </div>
-        <!-- End of header -->
+        <!-- End of Header -->
+
 <!--
         <section id="samples">
             <div class="container">
@@ -73,6 +87,93 @@
             </div>
         </section>
 -->
+
+    <!-- Hero Section -->
+
+
+    <div id = "index-hero" style="display:flex;justify-content:center;text-align:center;flex-direction: column;">
+        <!-- <h1>Hero Place Holder</h1> -->
+        <!-- <p class = "blue-18">We design custom greeting cards and postcards
+            <br> for you and your loved ones. </p>
+        <a href="order_howto.html"><button class="button-link" id="index-hero-button">Order Now</button></a> -->
+    </div>
+
+    <!-- <div class ="hero-section" id = "home_hero">
+        <img class="hero-image" src="Assets/howto_hero.png">
+    </div> -->
+
+
+    <!-- Content Section -->
+
+    <section id ="index-content">
+        <div id = "home-blurb" class = "index-text">
+            <h2 class="blue-24">
+                Whether you want to send a birthday card or celebrate an anniversary, let us know your mission and we’ll create something special for your loved ones.
+            </h2>
+        </div>
+        <div class="gallery">
+        
+                <div class="flex-center">
+                    <img src="Assets/Illustration Rectangle.png" alt="">
+                    <h2 class = "v1">Illustrations</h2>
+                    <h2 class="blue-18">Based on reference photos, we will illustrate you and your loved ones.</h2>
+                </div>
+        
+                <div class="flex-center">
+                    <img src="Assets/Typography Rectangle.png" alt="">
+                    <h2 class = "v1">Typography</h2>
+                    <h2 class="blue-18">We will hand-letter whatever message you want to express.</h2>
+        
+                </div>
+                <div class="flex-center">
+                    <img src="Assets/Card Design Rectangle.png" alt="">
+                    <h2 class = "v1">Card Design</h2>
+                    <h2 class="blue-18">We’ll add color and flourishes to finish your custom design.</h2>
+                </div>
+        </div>
+        <div class="flex-center">
+            <a href="order_howto.html" style = "padding-bottom: 62px;">
+                <button class ="submit-button">Order a Card</button>
+            </a>
+        </div>
+        <section id = "design-preview">
+            <div class="flex-center">
+                <div id = "design-blurb" class = "index-text">
+                    <h2 class="v1">
+                        Our latest designs
+                    </h2>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="flex-center">
+                    <img src = "Assets/gallery2.png" alt="">
+                </div>
+                <div class="flex-center">
+                    <img src = "Assets/gallery3.png" alt="">
+                </div>
+                <div class="flex-center">
+                    <img src = "Assets/gallery4.png" alt="">
+                </div>
+            </div>
+            
+            <div class="flex-center" style="padding-bottom:62px">
+                <a href="gallery.html">
+                    <button class ="submit-button">See more in our gallery</button>
+                </a>
+            </div>
+        </section>
+    </section>
+    
+
+    
+    <div class="index-footer">
+        <h2 class ="v1" class = "index-text">
+            Reach out to us at
+            <br>hellodispatchko@gmail.com
+        </h2>
+    </div>
+
+
         
     </body>
 </html>
